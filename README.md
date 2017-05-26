@@ -2,6 +2,12 @@
 A little Python script I use to relax when panicky.
 
 ## Instructions
-* Ensure you have Python and pip installed. I tested it with Python 3.6.
+* Ensure you have Python and pip installed. I tested and wrote Calm using Python 3.6.
 * Navigate to the Calm directory and, while connected to the internet, run `pip install -r requirements.txt` to install Calm's dependencies.
 * Run `python Calm.py` to execute the script. Hit escape to quit.
+
+_Note:_ To run in windowed mode, use the `-w` or `--windowed` flag.
+* `python Calm.py --windowed`
+* `python Calm.py -w`
+
+_Note:_ If you use a Linux-based system, you might need to replace `python` in the above command line instructions with `python3`, since the former invokes a Python 2 interpreter by default.
