@@ -1,5 +1,5 @@
 # Calm
-A little Python script I use to relax when panicky.
+A small Python script I wrote to help me relax when panicky.
 
 ## Instructions
 * Ensure you have Python and pip installed. I tested and wrote Calm using Python 3.6.
