@@ -6,8 +6,9 @@ A little Python script I use to relax when panicky.
 * Navigate to the Calm directory and, while connected to the internet, run `pip install -r requirements.txt` to install Calm's dependencies.
 * Run `python Calm.py` to execute the script. Hit escape to quit.
 
-_Note:_ To run in windowed mode, use the `-w` or `--windowed` flag.
-* `python Calm.py --windowed`
-* `python Calm.py -w`
+## Additional Notes:
+  1. To run in windowed mode, use the `-w` or `--windowed` flag. Fo For example:
+      * `python Calm.py --windowed`
+      * `python Calm.py -w`
 
-_Note:_ If you use a Linux-based system, you might need to replace `python` in the above command line instructions with `python3`, since the former invokes a Python 2 interpreter by default.
+  2. If you use a Linux-based system, you might need to replace `python` in the above command line instructions with `python3`, since the former invokes a Python 2 interpreter by default.
