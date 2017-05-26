@@ -1,3 +1,12 @@
+# Nikhil Tony Idiculla, 2017
+# All rights reserved.
+#
+# Contact me:
+#   EMAIL:  nikhilidiculla@gmail.com
+#   GITHUB: https://github.com/nti-Pi
+
+import sys
+
 from pyglet import app
 from pyglet import clock
 from pyglet import window
@@ -8,7 +17,17 @@ from pyglet import image
 from pyglet.window import key
 from pyglet.gl import glClearColor, glClear, GL_COLOR_BUFFER_BIT
 
-CalmWindow = window.Window(fullscreen=True)
+fs = True
+if len(sys.argv) > 1:
+    if sys.argv[1] == '--windowed' or sys.argv[1] == '-w':
+        fs = False
+
+    else:
+        print('WARNING: Invalid command line flags. Only accepts "-w" OR "--windowed"',
+              file=sys.stderr)
+
+CalmWindow = window.Window(fullscreen=fs)
+
 
 Color_Mauve = (163, 149, 154)
 Color_Tan = (206, 174, 157)
@@ -95,11 +114,16 @@ class StartState(BaseState):
 
     @staticmethod
     def execute(dt):
+        global Cycle_DisplayColor
+
         StartState.Timer += dt
 
         if StartState.Timer >= StartState.Duration:
             StartState.de_activate()
             TransitionState.activate(StartState.Timer - StartState.Duration)
+
+        else:
+            Cycle_DisplayColor = interpolate_color((0, 0, 0), Cycle_CurrColor, StartState.Timer / StartState.Duration)
 
     @staticmethod
     def de_activate():
