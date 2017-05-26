@@ -7,7 +7,7 @@ A little Python script I use to relax when panicky.
 * Run `python Calm.py` to execute the script. Hit escape to quit.
 
 ## Additional Notes:
-  * To run in windowed mode, use the `-w` or `--windowed` flag. Fo For example:
+  * To run in windowed mode, use the `-w` or `--windowed` flag. For example, either of the following commands will work:
       * `python Calm.py --windowed`
       * `python Calm.py -w`
 
