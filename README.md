@@ -11,4 +11,4 @@ A small Python script I wrote to help me relax.
       * `python Calm.py --windowed`
       * `python Calm.py -w`
 
-  * If you use a Linux-based system, you might need to replace `python` in the above command line instructions with `python3`, since the former invokes a Python 2 interpreter by default.
+  * If you use a Linux-based system, you might need to replace `python` in the above command line instructions with `python3`, since the former could invoke a Python 2 interpreter by default.
